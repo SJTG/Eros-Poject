@@ -103,24 +103,24 @@
   color: #ffdd57; /* podés cambiarlo si querés otro acento */
 }
 
-/* Servicios */
+/* pasos */
 
-.servicios-section {
+.pasos-section {
   background-color: #008085;
   color: #ffffff;
   padding: 80px 0;
 }
 
-.servicios-section h2 {
+.pasos-section h2 {
   font-weight: 700;
   margin-bottom: 20px;
 }
 
-.servicios-section p {
+.pasos-section p {
   color: #e8f8f7;
 }
 
-.servicios-tabs {
+.pasos-tabs {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -129,7 +129,7 @@
   margin-bottom: 40px;
 }
 
-.servicio-tab {
+.pasos-tab {
   border: 2px solid #00b8a9;
   background-color: transparent;
   color: #ffffff;
@@ -139,18 +139,18 @@
   transition: all 0.3s ease;
 }
 
-.servicio-tab:hover {
+.pasos-tab:hover {
   background-color: #00b8a9;
   transform: translateY(-3px);
 }
 
-.servicio-tab.active {
+.pasos-tab.active {
   background-color: #ffffff;
   color: #008085;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
 
-.servicio-contenido {
+.pasos-contenido {
   max-width: 850px;
   margin: 0 auto;
   text-align: left;
@@ -171,18 +171,18 @@
 }
 
 /* Listado con íconos de check (opcional si usás listas) */
-.servicio-contenido ul {
+.pasos-contenido ul {
   list-style: none;
   padding-left: 0;
 }
 
-.servicio-contenido ul li {
+.pasos-contenido ul li {
   position: relative;
   padding-left: 25px;
   margin-bottom: 8px;
 }
 
-.servicio-contenido ul li::before {
+.pasos-contenido ul li::before {
   content: "✓";
   position: absolute;
   left: 0;
@@ -267,4 +267,151 @@
   height: 60px;
   object-fit: contain;
   filter: brightness(0) saturate(100%) invert(51%) sepia(67%) saturate(352%) hue-rotate(142deg) brightness(96%) contrast(91%);
+}
+/* 
+servicios once again */
+
+.servicios-container {
+  color: #008085;
+}
+
+.servicios-subtitulo {
+  color: #008085;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.servicio-card {
+  background-color: #008085;
+  border-radius: 15px;
+  padding: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.servicio-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.servicio-icono {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+.btn-servicio {
+  background-color: #00c2a8;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 0.6rem 1.5rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn-servicio:hover {
+  background-color: #00a38f;
+}
+
+/* sobre mi */
+
+.sobreMi-section {
+  background-color: #f8f9fa;
+  color: #1a1a1a;
+}
+
+.sobreMi-subtitulo {
+  color: #008085;
+  font-weight: 600;
+}
+
+.sobreMi-imagenes {
+  position: relative;
+}
+
+.sobreMi-img-principal {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.sobreMi-img-secundaria {
+  position: absolute;
+  bottom: -25px;
+  left: 25px;
+  width: 50%;
+  border-radius: 15px;
+  border: 5px solid #ffffff;
+}
+
+.btn-sobreMi {
+  background-color: #00c2a8;
+  color: white;
+  font-weight: 600;
+  border-radius: 30px;
+  padding: 0.7rem 1.6rem;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-sobreMi:hover {
+  background-color: #00a38f;
+}
+
+/* footer */
+.footer-section {
+  background-color: #001f23;
+  color: white;
+}
+
+.footer-desc {
+  color: #cccccc;
+  font-size: 0.95rem;
+}
+
+.footer-links a {
+  color: #b8ece8;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 8px;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #00c2a8;
+}
+
+.social-icon {
+  font-size: 1.5rem;
+  color: #00c2a8;
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+  color: #00f0cc;
+}
+
+.btn-footer {
+  background-color: #00c2a8;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 25px;
+  padding: 0.7rem 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-footer:hover {
+  background-color: #00a38f;
+}
+
+.form-control {
+  background-color: #012d31;
+  border: 1px solid #014b4f;
+  color: white;
+}
+
+.form-control::placeholder {
+  color: #a5bcbc;
 }

@@ -4,7 +4,10 @@ import Presentacion from "./Components/Presentacion.jsx";
 import Problematica from "./Components/Problematica.jsx";
 import Etica from "./Components/Etica.jsx";
 import Break from "./Components/Break.jsx";
-import Servicios from "./Components/Servicios.jsx"; 
+import Pasos from "./Components/Pasos.jsx"; 
+import Servicios from "./Components/Servicios.jsx";
+import SobreMi from "./Components/SobreMi.jsx";
+import Footer from "./Components/Footer.jsx";
 
 function App() {
   return (
@@ -16,7 +19,10 @@ function App() {
       ,<Problematica />
       ,<Break />
       ,<Etica />
+      ,<Pasos />
       ,<Servicios />
+      , <SobreMi />
+      ,<Footer />
     </>
   );
 }

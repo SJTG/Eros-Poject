@@ -47,7 +47,9 @@ export default function NavbarEros() {
               <ul className="dropdown-menu">
                 <li><a className="dropdown-item" href="#">Desarrollo web</a></li>
                 <li><a className="dropdown-item" href="#">Publicidad en Google</a></li>
-                <li><a className="dropdown-item" href="#">Redacción de Publicidad</a></li>
+                <li><a className="dropdown-item" href="#">Redacción de publicidad</a></li>
+                <li><a className="dropdown-item" href="#">Diseño grafico</a></li>
+                <li><a className="dropdown-item" href="#">Gestion de redes sociales</a></li>
               </ul>
             </li>
 

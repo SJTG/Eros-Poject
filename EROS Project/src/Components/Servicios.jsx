@@ -1,142 +1,99 @@
-import React, { useState } from "react";
+import React from "react";
 
 export default function Servicios() {
-  const pasos = [
+  const servicios = [
     {
-      titulo: "1. Auditoría, investigación y estrategia",
-      descripcion: (
-        <>
-          <p>
-            El primer paso es analizar la forma en que realizás tu práctica de
-            terapia, tus competidores locales y las formas en que los pacientes
-            potenciales encuentran servicios como los que vos ofrecés. Esto
-            incluye:
-          </p>
-          <ul>
-            <li>
-              Estudiar tu marca personal y elaborar un análisis DAFO indicando
-              debilidades, amenazas, fortalezas y oportunidades de tu negocio
-              actual.
-            </li>
-            <li>
-              Auditoría de tus redes sociales con un informe de posibles
-              mejoras.
-            </li>
-            <li>
-              Conocer los servicios que ofrecés, sus condiciones y otra
-              información clave para crear una estrategia de marketing digital
-              sólida.
-            </li>
-            <li>
-              Analizar tu sitio web (si ya lo tenés) y señalar los aspectos que
-              se podrían mejorar para tener una mayor conversión.
-            </li>
-            <li>
-              Observar cómo tus principales competidores obtienen pacientes por
-              Internet.
-            </li>
-            <li>
-              Descubrir cómo los pacientes te encuentran actualmente en motores
-              de búsqueda o redes sociales.
-            </li>
-            <li>
-              Investigar oportunidades o palabras clave que tus potenciales
-              clientes están buscando en Google.
-            </li>
-            <li>
-              Desarrollar una estrategia de marketing para terapeutas que actúe
-              como hoja de ruta o guía para los próximos 12 meses.
-            </li>
-          </ul>
-          <p>
-            <strong>Por qué es importante:</strong> una auditoría es un proceso
-            esencial en tu estrategia para evaluar la posición actual de tu
-            empresa, el lugar de tus competidores, lo que les importa a tus
-            pacientes potenciales y cómo convertir todo eso en una estrategia de
-            marketing tangible para hacer crecer tu consulta.
-          </p>
-        </>
-      ),
+      titulo: "Desarrollo web",
+      descripcion:
+        "Creamos sitios web estratégicos para psicólogos, optimizados para atraer pacientes y reflejar tu marca personal.",
+      features: [
+        "Diseño adaptable y moderno",
+        "Optimización SEO básica",
+        "Integración con WhatsApp y formularios",
+      ],
+      boton: "Ver desarrollo web",
+      icono: "/src/assets/Iconos/agregar-usuario.png",
     },
     {
-      titulo: "2. Construyendo tu sitio web estratégico",
-      descripcion: (
-        <>
-          <p>
-            En este paso creamos o mejoramos tu sitio web para que no solo sea
-            visualmente atractivo, sino también funcional, rápido y orientado a
-            convertir visitantes en pacientes. Incluye:
-          </p>
-          <ul>
-            <li>Diseño web profesional centrado en tu marca personal.</li>
-            <li>Optimización SEO para atraer tráfico orgánico.</li>
-            <li>Redacción estratégica de textos orientados a pacientes.</li>
-            <li>Integración con herramientas de contacto y reserva de turnos.</li>
-            <li>
-              Configuración de métricas para monitorear resultados reales.
-            </li>
-          </ul>
-          <p>
-            <strong>Por qué es importante:</strong> tu sitio web es tu primera
-            impresión digital. Un sitio estratégico genera confianza y guía al
-            usuario hacia la acción que buscás.
-          </p>
-        </>
-      ),
+      titulo: "Publicidad en Google",
+      descripcion:
+        "Campañas diseñadas para posicionarte en los primeros resultados de búsqueda y generar consultas constantes.",
+      features: [
+        "Segmentación precisa por ubicación",
+        "Optimización de presupuesto",
+        "Análisis de conversiones en tiempo real",
+      ],
+      boton: "Ver publicidad en Google",
+      icono: "/src/assets/Iconos/megafono.png",
     },
     {
-      titulo: "3. Consiguiendo pacientes",
-      descripcion: (
-        <>
-          <p>
-            Con la estrategia definida y tu sitio web optimizado, pasamos a la
-            etapa de difusión y crecimiento. Esto incluye:
-          </p>
-          <ul>
-            <li>Campañas publicitarias segmentadas en Google y redes sociales.</li>
-            <li>Creación de contenido que fortalece tu autoridad profesional.</li>
-            <li>Gestión de redes y mensajes coherentes con tu propósito.</li>
-            <li>
-              Análisis de rendimiento y optimización constante para aumentar
-              consultas.
-            </li>
-          </ul>
-          <p>
-            <strong>Por qué es importante:</strong> el crecimiento sostenido
-            llega cuando hay coherencia entre tu mensaje, tu presencia digital y
-            las estrategias que implementás.
-          </p>
-        </>
-      ),
+      titulo: "Redacción publicitaria",
+      descripcion:
+        "Creamos textos que conectan emocionalmente con tu público, reflejando empatía, profesionalismo y cercanía.",
+      features: [
+        "Copywriting para redes y web",
+        "Corrección de tono y estilo",
+        "Textos orientados a conversión",
+      ],
+      boton: "Ver redacción publicitaria",
+      icono: "/src/assets/Iconos/comentar-citar.png",
+    },
+    {
+      titulo: "Diseño gráfico",
+      descripcion:
+        "Diseños profesionales para redes, flyers, identidad visual y materiales promocionales coherentes con tu marca.",
+      features: [
+        "Diseño de identidad visual",
+        "Material gráfico para redes sociales",
+        "Coherencia visual con tu marca",
+      ],
+      boton: "Ver diseño gráfico",
+      icono: "/src/assets/Iconos/diamante.png",
+    },
+    {
+      titulo: "Gestión de redes sociales",
+      descripcion:
+        "Creamos estrategias y contenidos para potenciar tu presencia online y conectar con nuevos pacientes.",
+      features: [
+        "Plan de contenidos mensual",
+        "Diseños y textos adaptados",
+        "Monitoreo y seguimiento de resultados",
+      ],
+      boton: "Ver gestión de redes",
+      icono: "/src/assets/Iconos/chat-flecha-crecer.png",
     },
   ];
 
-  const [activo, setActivo] = useState(0);
-
   return (
-    <section className="servicios-section text-center">
+    <section className="servicios-container py-5 text-center">
       <div className="container">
-        <p className="fw-semibold mb-2">
-          Dedícate al trabajo con tus pacientes. Nosotros nos encargamos de que lleguen a ti.
+        <p className="servicios-subtitulo">
+          Tenemos más herramientas para psicólogos
         </p>
-        <h2 className="fw-bold mb-4">
-          Delega tu marketing en un equipo que conoce bien tu profesión
-        </h2>
+        <h2 className="fw-bold mb-5">También podemos ayudarte con otros servicios</h2>
 
-        <div className="servicios-tabs">
-          {pasos.map((paso, index) => (
-            <button
-              key={index}
-              className={`servicio-tab ${index === activo ? "active" : ""}`}
-              onClick={() => setActivo(index)}
-            >
-              {paso.titulo}
-            </button>
+        <div className="row g-4 justify-content-center">
+          {servicios.map((servicio, index) => (
+            <div className="col-md-4" key={index}>
+              <div className="servicio-card h-100 shadow-sm">
+                <img
+                  src={servicio.icono}
+                  alt={servicio.titulo}
+                  className="servicio-icono mb-3"
+                />
+                <h4 className="fw-bold mb-2 text-white">{servicio.titulo}</h4>
+                <p className="text-light mb-3">{servicio.descripcion}</p>
+                <ul className="text-start list-unstyled text-light">
+                  {servicio.features.map((item, i) => (
+                    <li key={i} className="mb-1">✅ {item}</li>
+                  ))}
+                </ul>
+                <button className="btn btn-servicio mt-3">
+                  {servicio.boton}
+                </button>
+              </div>
+            </div>
           ))}
-        </div>
-
-        <div className="servicio-contenido mt-4">
-          {pasos[activo].descripcion}
         </div>
       </div>
     </section>
